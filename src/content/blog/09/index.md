@@ -5,16 +5,16 @@ date: "12/31/2024"
 draft: false
 ---
 
-## Phasor Wave
+### Phasor Wave
 
 <!--more-->
 
-### genを使ったPhasor Wave
+#### genを使ったPhasor Wave
 ![alt](/images/phasor.png)
 
 ---
 
-### Codeboxを使ったPhasor Wave
+#### Codeboxを使ったPhasor Wave
 ```
 History h;
 sr = samplerate;
