@@ -5,17 +5,17 @@ date: "12/31/2024"
 draft: false
 ---
 
-### Phasor Wave
+## Phasor Wave
 
 <!--more-->
 
-#### genを使ったPhasor Wave
+### genを使ったPhasor Wave
 ![alt](/images/phasor.png)
 
 ---
 
-#### Codeboxを使ったPhasor Wave
-```
+### Codeboxを使ったPhasor Wave
+```js
 History h;
 sr = samplerate;
 freq = in1;
@@ -29,14 +29,14 @@ out1 = y;
 ```
 ---
 
-### Sin Wave
+## Sin Wave
 
-#### genを使ったSin Wave
+### genを使ったSin Wave
 
 ---
 
-#### Codeboxを使ったSin Wave
-```
+### Codeboxを使ったSin Wave
+```js
 History h;
 sr = samplerate;
 freq = in1;
@@ -53,13 +53,13 @@ out1 = y;
 
 ---
 
-### Rectangle
-#### genを使ったRectangle Wave
+## Rectangle
+### genを使ったRectangle Wave
 
 ---
 
-#### Codeboxを使ったRectangle Wave
-```
+### Codeboxを使ったRectangle Wave
+```js
 History h;
 sr = samplerate;
 freq = in1;

@@ -9,13 +9,13 @@ SuperColliderで音響プログラミングをしていこうという回
 SuperColliderの基本的な解説はここではなしないが、そのうちしたいと思います。  
 まずはサイン波から生成していこう  
 
-```supercollider
+```js
 SinOsc.ar(440.0)!2 * Line.kr(1, 0, 1.0);
 ```
 音はなっただろうか。Cmnd + . で音は消せる。  
 さらにこれをSynthDefに書き換えると  
 
-```supercollider
+```js
 (
 SynthDef(\sine, {
 	a = SinOsc.ar(440.0)!2 * Line.kr(1, 0, 1.0);
@@ -29,8 +29,7 @@ Synth(\sine);
 以上はSuperColliderのシンセの基本とも言えるが、これをプログラミングの力で拡張していきたいと思う。  
 まずはfor loopを使ってシンセを複製してみよう。  
 
-```
-
+```js
 (
 SynthDef(\sine, {
 	a = SinOsc.ar(440.0)!2 * Line.kr(1, 0, 1.0);
@@ -50,7 +49,7 @@ Routine{
 
 これをさらに面白くするために発音ごとにランダムな周波数で鳴るように書き換えてみたい  
 
-```
+```js
 (
 SynthDef(\sine, {
 	a = SinOsc.ar(Rand.new(100, 1000))!2 * Line.kr(1, 0, 1.0);
