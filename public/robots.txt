@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://naotoono.net/sitemap-index.xml
