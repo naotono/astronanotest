@@ -39,20 +39,18 @@ const work = await Promise.all(
       <section>
         <article class="space-y-4">
           <p class="animate">
-            この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+          音楽家/サウンドデザイナー/プログラマー
           </p>
           <p class="animate">
-            I come packed with full type safety, a sitemap, an rss feed, markdown 
-            and mdx support (use components in your markdown) through astro integrations.
-            I am styled with tailwind and come preconfigured with light, dark and 
-            system/os theme preferences out of the box.
+          主に音作品をの制作を軸に活動している「Naoto Ono」のWebサイト。<br/>
+          リリースや音楽ソフトウェアのチュートリアルについての情報を書いています。
           </p>
           <p class="animate">
-            Visit
-            <Link href="https://github.com/markhorn-dev/astro-nano" aria-label="Astro Nano on Github" external>
-              Astro Nano on Github
-            </Link>
-            to fork the repository, read the docs or one-click deploy on Vercel or Netlify. 
+            音楽家としての活動にとどまらず、プログラミングのスキルを活かしてオリジナルの音楽ソフトウェアやツールを開発しています。これにより、音楽制作の過程をより効率的で創造的にするための技術を提供しています。プログラミング言語としては、Max/MSP、Supercollider、Pure Dataなどを使用し、インタラクティブな音楽制作ツールやオーディオプロセッシングのアルゴリズムを開発しています。これらのツールは、Naoto Ono自身の音楽制作のスタイルに合わせてカスタマイズされ、他の音楽制作にも有益なものとなっています。
+          </p>
+          <p class="animate">
+            <Link href="https://naotoono.net/blog" aria-label="Astro Nano on Github" external>ブログ</Link>
+            にて技術的なことを語っているので、興味があればお読みください
           </p>
         </article>
       </section>
@@ -70,53 +68,6 @@ const work = await Promise.all(
           {blog.map(post => (
             <li>
               <ArrowCard entry={post} />
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section class="animate space-y-6">
-        <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Work Experience
-          </h5>
-          <Link href="/work">
-            See all work
-          </Link>
-        </div>
-        <ul class="flex flex-col space-y-4">
-          {work.map(entry => (
-            <li>
-              <div class="text-sm opacity-75">
-                {dateRange(entry.data.dateStart, entry.data.dateEnd)}
-              </div>
-              <div class="font-semibold text-black dark:text-white">
-                {entry.data.company}
-              </div>
-              <div class="text-sm opacity-75">
-                {entry.data.role}
-              </div>
-              <article>
-                <entry.Content />
-              </article>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section class="animate space-y-6">
-        <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Recent projects
-          </h5>
-          <Link href="/projects">
-            See all projects
-          </Link>
-        </div>
-        <ul class="flex flex-col gap-4">
-          {projects.map(project => (
-            <li>
-              <ArrowCard entry={project} />
             </li>
           ))}
         </ul>
